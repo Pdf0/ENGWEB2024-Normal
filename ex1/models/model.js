@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const contratosSchema = new Schema({
+    _id: Number,
     nAnuncio: String,
     tipoprocedimento: String,
     objectoContrato: String,
@@ -11,8 +12,7 @@ const contratosSchema = new Schema({
     prazoExecucao: Number,
     NIPC_entidade_comunicante: Number,
     entidade_comunicante: String,
-    fundamentacao: String,
-    _id: Number
+    fundamentacao: String
 }, { collection: 'contratos' });
 
 module.exports = mongoose.model('contrato', contratosSchema);

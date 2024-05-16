@@ -10,6 +10,32 @@
 
 - O dataset foi importado para o MongoDB utilizando o comando `mongoimport -d contratos -c contratos --type json --file 'contratos.json' --jsonArray`.
 
-### 1.2
 
-1. 
+### 1.3
+
+Para correr o servidor basta executar
+
+```bash
+
+mongoimport -d contratos -c contratos --type json --file 'contratos.json' --jsonArray
+
+npm install
+node app.js
+```
+
+### Ex2
+
+Para correr o servidor basta executar
+
+```bash
+
+npm install
+npm start
+```
+Para este exercício foi usado PUG para facilitar a renderização do HTML.
+Foi também utilizado Axios para fazer pedidos ao servidor da API.
+
+
+
+
+
